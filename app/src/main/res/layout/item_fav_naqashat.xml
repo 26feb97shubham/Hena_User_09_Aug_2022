@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:cardElevation="@dimen/_8ssp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_naqashat"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:src="@drawable/default_naqashat_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_naqashat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Salma"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toEndOf="@id/civ_naqashat"
+            app:layout_constraintTop_toTopOf="@id/civ_naqashat" />
+
+        <LinearLayout
+            android:id="@+id/ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginEnd="@dimen/_9sdp"
+            app:layout_constraintEnd_toStartOf="@+id/llFavoriate"
+            app:layout_constraintTop_toTopOf="@+id/tv_naqashat_name">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:text="3.5"
+                android:textAlignment="viewStart"
+                android:textColor="@color/orange"
+                android:textDirection="locale"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:scaleX="0.85"
+                android:scaleY="0.85"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:theme="@style/orangeRatingBar" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/location"
+            android:textColor="@color/gold"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toEndOf="@id/civ_naqashat"
+            app:layout_constraintTop_toBottomOf="@id/tv_naqashat_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_medium"
+            android:textDirection="locale"
+            android:textAlignment="viewEnd"
+            android:gravity="center_vertical|end"
+            android:maxLines="2"
+            android:maxWidth="@dimen/_120sdp"
+            android:text="@string/location"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toStartOf="@+id/llFavoriate"
+            app:layout_constraintTop_toTopOf="@+id/tv_location" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFavoriate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/iv_add_delete_fav_manager"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/add_to_fav_icon" />
+
+            <ImageView
+                android:id="@+id/iv_added_deleted_fav_manager"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/fav_added_icon"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

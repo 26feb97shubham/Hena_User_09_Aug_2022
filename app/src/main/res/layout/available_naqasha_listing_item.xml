@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginVertical="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_6sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_profile"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/user"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text="Salma"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toEndOf="@id/civ_profile"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAllCaps="false"
+            android:fontFamily="@font/avenir_medium"/>
+
+        <LinearLayout
+            android:id="@+id/ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/tv_name">
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:theme="@style/orangeRatingBar"
+                android:layout_marginStart="@dimen/_5sdp"
+                style="?attr/ratingBarStyleSmall"
+                app:layout_constraintStart_toEndOf="@+id/txtRating"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.5"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:layout_marginStart="@dimen/_6sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_9ssp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/location"
+            android:textAlignment="viewStart"
+            android:textDirection="locale"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintStart_toEndOf="@id/civ_profile"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/ratingView"
+            android:textAllCaps="false"
+            android:fontFamily="@font/avenir_medium"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_address"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:text="Cluster A, JLT, Dubai"
+            android:textAlignment="viewEnd"
+            android:textDirection="locale"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingView"
+            android:textAllCaps="false"
+            android:fontFamily="@font/avenir_medium"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_booking_date_time"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center_vertical|start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@id/civ_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/booking_date_time"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/text_gold_color_dark"
+            android:textStyle="normal"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/avenir_medium"/>
+        <LinearLayout
+            android:id="@+id/calendar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv_booking_date_time"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/little_curved_gray_filled_gold_border_rect_box">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_gold_color_dark"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/avenir_medium"
+                android:text="01 / 01 / 2021 - 7:00 PM"
+                android:gravity="center_vertical|start"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                app:drawableStartCompat="@drawable/ic_actions_calendar"
+                app:drawableEndCompat="@drawable/dark_brown_down_icon"
+                android:drawablePadding="@dimen/_10sdp"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/cardsFragmentConstraintLayout"
+    tools:context=".fragments.MyCardsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_saved_cards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:text="@string/my_cards"
+                android:textColor="@color/gold"
+                android:textSize="@dimen/_12ssp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/vpCards"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_no_cards_found"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_100sdp"
+                app:layout_constraintTop_toTopOf="@id/vpCards"
+                app:layout_constraintBottom_toBottomOf="@id/vpCards"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/no_cards_found"
+                android:textColor="@color/gold"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_28sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpCards"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingHorizontal="@dimen/_16sdp"
+                app:layout_constraintDimensionRatio="1:0.55"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_saved_cards" />
+
+     <!--       <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_savedcards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_saved_cards"
+                tools:itemCount="3"
+                tools:listitem="@layout/cards_listing" />-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_saved_cards_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:text="@string/saved_cards"
+                android:textColor="@color/gold"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vpCards" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_edit_card"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/curved_light_brown_filled_rect_box"
+                android:fontFamily="@font/avenir_medium"
+                android:gravity="center"
+                android:text="@string/edit_card"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:visibility="gone"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_saved_cards_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_delete_card"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/curved_light_brown_filled_rect_box"
+                android:fontFamily="@font/avenir_medium"
+                android:gravity="center"
+                android:text="@string/delete_card"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_edit_card" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_add_new_card"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/curved_gold_filled_rect_box"
+                android:fontFamily="@font/avenir_medium"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="@string/add_new_card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_delete_card" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_view_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="@dimen/_5sdp"
+                android:visibility="gone"
+                style="@style/Theme.Progressbar"
+                android:indeterminateTint="@color/gold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

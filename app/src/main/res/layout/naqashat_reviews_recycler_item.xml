@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_8sdp"
+    android:layout_marginVertical="@dimen/_6sdp"
+    app:cardElevation="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_6sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_profile"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:src="@drawable/default_naqashat_profile"
+            app:civ_border_color="@color/gold"
+            app:civ_border_overlay="true"
+            app:civ_border_width="@dimen/_1sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_naqashat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/featured_naqashat"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toEndOf="@id/civ_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/featured_naqashat"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:textDirection="locale"
+            android:textAlignment="viewEnd"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_naqashat_name" />
+
+        <LinearLayout
+            android:id="@+id/ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@id/tv_naqashat_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_naqashat_name">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:theme="@style/orangeRatingBar" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:text="3.5"
+                android:textAlignment="viewStart"
+                android:textColor="@color/orange"
+                android:textDirection="locale"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_naqashat_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_medium"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:maxLines="3"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="@string/service_desc"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_naqashat_name"
+            app:layout_constraintTop_toBottomOf="@+id/ratingView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

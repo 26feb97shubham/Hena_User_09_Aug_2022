@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_6sdp"
+    android:layout_marginVertical="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_6sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_4sdp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/view"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/def_henna" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_services"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center_vertical|start"
+            android:text="@string/services"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_gold_color_dark"
+            android:textDirection="locale"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/iv_add_delete_fav"
+            app:layout_constraintStart_toEndOf="@id/view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_add_delete_fav"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:src="@drawable/add_to_fav_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_added_deleted_fav"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:src="@drawable/fav_added_icon"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_services" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="AED 800"
+            android:gravity="center_vertical|start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@id/view"
+            app:layout_constraintTop_toBottomOf="@id/tv_services" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_offer_price_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_services"
+            app:layout_constraintStart_toEndOf="@id/tv_price"
+            app:layout_goneMarginStart="@dimen/_8sdp"
+            android:text="AED 800"
+            android:textColor="@color/text_gold_color_dark"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_8ssp"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="@string/category"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/text_gold_color_dark"
+            android:textDirection="locale"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/civ_supplierImg_linear"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:text="Hand Henna"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/text_gold_color_dark"
+            android:textDirection="locale"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@id/category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_supplierImg_linear"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@color/black"
+            app:layout_constraintStart_toStartOf="@id/tv_services"
+            app:layout_constraintTop_toBottomOf="@id/category" />
+
+        <LinearLayout
+            android:id="@+id/ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/civ_supplierImg_linear"
+            app:layout_constraintStart_toEndOf="@id/civ_supplierImg_linear"
+            app:layout_constraintTop_toTopOf="@id/civ_supplierImg_linear">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="3.5"
+                android:textAlignment="viewStart"
+                android:textColor="@color/orange"
+                android:textDirection="locale"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:rating="3.5"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:theme="@style/orangeRatingBar"
+                app:layout_constraintStart_toEndOf="@+id/txtRating"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

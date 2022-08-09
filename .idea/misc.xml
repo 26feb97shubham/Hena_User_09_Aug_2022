@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/activity_forgot_password.xml" value="0.2957427536231884" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/activity_home.xml" value="0.4278688524590164" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/activity_otp_verification.xml" value="0.1" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/activity_tap_payment_gateway.xml" value="0.28940217391304346" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/addresses_listing.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/available_naqasha_listing_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/booking_history_recycler_items_listing.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/current_booking_recycler_items_listing.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/custom_toast_layout.xml" value="0.28940217391304346" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/default_listing_recycler_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/filtered_offers_n_disc_recycler_item_listing.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_add_address_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_address_bottom_sheet.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_address_list_bottom_sheet.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_appointments.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_bookingdetails.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_c_m_s.xml" value="0.18802083333333333" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_cancelled_service_bottom_sheet_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_chat_with_admin.xml" value="0.15" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_filtered_offers_and_discounts.xml" value="0.2694746376811594" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_intro.xml" value="0.365625" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_my_cards.xml" value="0.1634963768115942" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_naqashat_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_offers_and_discounts.xml" value="0.2694746376811594" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_payment_details.xml" value="0.15" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_reschedule_service_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/fragment_service_payment.xml" value="0.17831813576494426" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/grid_services_recycler_items.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/item_cards_list.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/item_featured_naqashat.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/naqashat_offers_recycler_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/naqashat_reviews_recycler_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/naqashat_services_recycler_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/service_image_list_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/services_categories_items.xml" value="0.3482789855072464" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/side_menu_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/HeenaUserUpdated/heena_user-master/app/src/main/res/layout/side_top_view.xml" value="0.18802083333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/chat_partner_bg.xml" value="0.3037037037037037" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/chat_user_bg.xml" value="0.225" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/curved_gold_filled_rect_box.xml" value="0.3828125" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/curved_green_filled_rect_box.xml" value="0.2898148148148148" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/custom_thumb.xml" value="0.2916666666666667" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/gold_solid_box.xml" value="0.3425925925925926" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/gray_dot.xml" value="0.1921875" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/gray_rect_box.xml" value="0.3425925925925926" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/gray_solid_box.xml" value="0.3425925925925926" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/row_chat_user_image_border.xml" value="0.29814814814814816" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/strike_through_text_drawable.xml" value="0.3828125" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/strikethrough.xml" value="0.1921875" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/transparent_gold_filled_rect_box.xml" value="0.3527777777777778" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/transparent_rounded_corner_view.xml" value="0.35555555555555557" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/drawable/white_rect_filled_box.xml" value="0.1921875" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_choose_lang.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_choose_login_sign_up.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_forgot_password.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_home.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_introduction.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_no_internet.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_otp_verification.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_photo_editor.xml" value="0.34692028985507245" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_reset_password.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_splash.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_tap_payment_gateway.xml" value="0.25226449275362317" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_terms_and_conditions.xml" value="0.2971014492753623" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/activity_zoomable_image.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/addresses_listing.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/available_naqasha_listing_item.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/booking_history_recycler_items_listing.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/cancellation_policy_custom_alert_dialog_box.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/cards_listing.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/country_list_items.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/current_booking_recycler_items_listing.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/custom_slots_dialog_box.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/custom_toast_layout.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/default_listing_recycler_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/filtered_offers_n_disc_recycler_item_listing.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/filtered_results_listing_item.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_about_us.xml" value="0.307518115942029" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_add_address_bottom_sheet.xml" value="0.307518115942029" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_add_new_card.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_address_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_address_list_bottom_sheet.xml" value="0.307518115942029" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_all_managers_list.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_appointments.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_availablenaqasha_bottom_sheet.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_book_service.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_book_service_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_booking_confirm_dialog.xml" value="0.17883211678832117" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_bookingdetails.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_bottom_sheet_calendar.xml" value="0.30027173913043476" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_c_m_s.xml" value="0.1480978260869565" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_cancel_service_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_cancelled_service_bottom_sheet_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_card_slider.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_categories.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_change_password.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_chat_with_admin.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_contactus.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_edit_card_details.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_edit_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_f_a_q.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_favourites.xml" value="0.307518115942029" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_filtered_offers_and_discounts.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_help.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_help_page2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_intro.xml" value="0.3546875" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_language.xml" value="0.23324275362318841" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_logout_dialog.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_maps.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_my_cards.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_my_locations.xml" value="0.23731884057971014" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_naqashat_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_nearby_dialog.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_no_internet.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_nointernet_dialog.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_notifications.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_offers_and_discounts.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_rate_naqasha_bottom_sheet.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_reschedule_service_bottom_sheet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_select_lang.xml" value="0.3546875" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_service_payment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_settings.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_tap_payment_gateway.xml" value="0.3039772727272727" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_user_profile.xml" value="0.24139492753623187" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/fragment_view_offer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/gallery_layout_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/gallery_posts.xml" value="0.2346014492753623" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/grid_item_featured_naqashat.xml" value="0.2346014492753623" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/grid_services_recycler_items.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/heena_designs_layout_item.xml" value="0.2346014492753623" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/image_view_items.xml" value="0.23645833333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/item_cards_list.xml" value="0.30027173913043476" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/item_faq.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/item_fav_naqashat.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/item_featured_naqashat.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/item_help_page.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/item_notifications_list.xml" value="0.3546875" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/items_help_listing.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/layout_slots.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/main_category_list_item.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/naqashat_offers_recycler_item.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/naqashat_reviews_recycler_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/naqashat_services_recycler_item.xml" value="0.2346014492753623" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/offers_n_disc_listing_recycler_item.xml" value="0.2259963768115942" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/row_chat.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/row_chat_partner.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/row_chat_user.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/saved_address_listing.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/service_image_list_item.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/services_categories_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/side_menu_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/side_top_view.xml" value="0.17831813576494426" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/solutions_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/layout/sub_category_items.xml" value="0.2708333333333333" />
+        <entry key="..\:/Shubham_Jain/Shubham Projects/Hena_User/app/src/main/res/mipmap-anydpi-v26/heena_new.xml" value="0.3148148148148148" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/availableNaqashatBottomSheetFrameLayout"
+    tools:context=".bottomsheetdialog.AvailablenaqashaBottomSheetFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_available_naqasha_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center_vertical"
+            android:text="@string/available_hennaya"
+            android:textAllCaps="false"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rv_available_naqasha"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingHorizontal="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_available_naqasha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_available_naqasha_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_book_service"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/curved_gold_filled_rect_box"
+            android:text="@string/book_service"
+            android:fontFamily="@font/avenir_medium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            app:layout_constraintTop_toBottomOf="@id/rv_available_naqasha"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/tv_no_naqashats_found"
+            android:text="@string/no_naqashat_found"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/gold"
+            android:fontFamily="@font/avenir_medium"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

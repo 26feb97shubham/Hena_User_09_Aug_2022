@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/singnUpConstraintLayout"
+    android:background="@drawable/default_background"
+    tools:context=".activities.SignUpActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/golden_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/sign_up"
+                android:textAllCaps="true"
+                android:textColor="@color/gold"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_signup_desc"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/after_completing_your_registration_enjoy_browsing_our_services_and_features"
+                android:textAllCaps="false"
+                android:textColor="@color/gold"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sign_up" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:id="@+id/edtUsername_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:background="@drawable/gold_border_white_filled_rect_box_curved"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:hint="@string/username"
+                android:maxLines="1"
+                android:maxLength="55"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_signup_desc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtUsername_signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:background="@drawable/gold_border_white_filled_rect_box_curved"
+                android:id="@+id/llMobileNumber"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtUsername_signup"
+                    android:text="+971"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@color/gold"
+                    android:id="@+id/mtvCountryCode"/>
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:id="@+id/edtmobilenumber_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:hint="@string/mobile_number"
+                    android:imeOptions="actionNext"
+                    android:includeFontPadding="false"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:padding="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:maxLength="14"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtUsername_signup" />
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:id="@+id/edtemailaddress_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gold_border_white_filled_rect_box_curved"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:hint="@string/email_address"
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:maxLines="1"
+                android:maxLength="30"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llMobileNumber" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/edtlocation_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:background="@drawable/gold_border_white_filled_rect_box_curved"
+                android:drawablePadding="@dimen/_8sdp"
+                android:elevation="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/avenir_45_book"
+                android:gravity="center_vertical|start"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:hint="@string/location"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_color"
+                android:textSize="@dimen/_11ssp"
+                android:visibility="visible"
+                app:drawableStartCompat="@drawable/location_pin_dark_brown_layer_list"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtemailaddress_signup" />
+
+
+            <LinearLayout
+                android:id="@+id/passlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gold_border_white_filled_rect_box_curved"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtlocation_signup">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtpassword_signup"
+                    android:layout_width="0dp"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_weight="0.9"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/avenir_medium"
+                    android:hint="@string/password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:textAllCaps="false"
+                    android:maxLines="1"
+                    android:maxLength="55"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_pass_show_hide"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/invisible"
+                    android:layout_gravity="center_vertical"
+                    app:strokeColor="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    app:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cnfrmpasslayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/gold_border_white_filled_rect_box_curved"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passlayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtcnfrmpassword_signup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_weight="0.9"
+                    android:background="@android:color/transparent"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="@font/avenir_medium"
+                    android:hint="@string/confirm_password"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:textAllCaps="false"
+                    android:maxLines="1"
+                    android:maxLength="55"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_cnfrm_pass_show_hide"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/invisible"
+                    app:tint="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/cnfrmpasslayout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgChk"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/un_check" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtPlsAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_accept_the"
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/expressway_rg" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtTermsConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_underlined"
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="normal"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/expressway_rg"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    tools:ignore="AllCaps" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:background="@drawable/curved_gold_filled_rect_box"
+                android:elevation="@dimen/_5sdp"
+                android:fontFamily="@font/avenir_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/sign_up"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_tnc" />
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSignUp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_already_have_an_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/already_have_an_account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/_11ssp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_login_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@id/tv_already_have_an_account"
+                    android:elevation="@dimen/_5sdp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:includeFontPadding="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gold"
+                    android:textSize="@dimen/_11ssp" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

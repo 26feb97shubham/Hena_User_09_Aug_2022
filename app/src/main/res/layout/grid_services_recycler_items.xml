@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp"
+    app:cardElevation="@dimen/_6sdp"
+    android:layout_margin="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_6sdp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:layout_margin="@dimen/_4sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp">
+                <ImageView
+                    android:id="@+id/offer_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/def_henna"/>
+                <ImageView
+                    android:id="@+id/iv_add_to_fav"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/add_to_fav_icon"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_4sdp"/>
+
+                <ImageView
+                    android:id="@+id/iv_fav_added"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/fav_added_icon"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="gone"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_services"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:text="@string/services"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_gold_color_dark"
+            android:textDirection="locale"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:text="@string/services"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_gold_color_dark"
+            android:textDirection="locale"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@id/tv_services"
+            app:layout_constraintStart_toStartOf="@id/tv_services"
+            app:layout_constraintTop_toBottomOf="@id/tv_services" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="AED 800"
+            android:textColor="@color/text_gold_color_dark"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_8ssp"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_offer_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            app:layout_constraintStart_toEndOf="@id/tv_original_price"
+            app:layout_goneMarginStart="@dimen/_8sdp"
+            android:text="AED 800"
+            android:textColor="@color/text_gold_color_dark"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:gravity="center_vertical|start"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_8ssp"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_supplierImg"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_original_price"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@color/black"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintStart_toStartOf="@id/tv_services"/>
+
+        <LinearLayout
+            android:id="@+id/ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/civ_supplierImg"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/civ_supplierImg"
+            app:layout_constraintBottom_toBottomOf="@id/civ_supplierImg">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.5"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_9ssp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="3.5"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:theme="@style/orangeRatingBar"
+                android:layout_marginStart="@dimen/_5sdp"
+                style="?attr/ratingBarStyleSmall"
+                app:layout_constraintStart_toEndOf="@+id/txtRating"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

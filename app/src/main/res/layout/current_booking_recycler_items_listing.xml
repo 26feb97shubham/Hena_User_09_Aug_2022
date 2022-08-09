@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginVertical="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardElevation="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_bookingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="BOOK#070821001"
+            android:textColor="#836853"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center_vertical|start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:textStyle="normal"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:text="@string/pending"
+            android:gravity="center_vertical|end"
+            android:textDirection="locale"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="true"
+            android:textColor="#FF9F54"
+            android:textSize="@dimen/_10ssp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_accepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:text="Accepted"
+            android:gravity="center_vertical|end"
+            android:textDirection="locale"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="true"
+            android:textColor="#37CC37"
+            android:visibility="gone"
+            android:textSize="@dimen/_10ssp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_bookingId"
+            android:background="@color/gray"
+            android:layout_marginTop="@dimen/_6sdp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Drawing Service"
+            android:gravity="center_vertical|start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:textColor="#836853"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:textStyle="normal"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_service"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="AED 800"
+            android:gravity="center_vertical|start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:textColor="#836853"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/avenirlt85heavy"
+            android:textStyle="normal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tv_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/_8sdp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/supplierImg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@color/black" />
+            <LinearLayout
+                android:id="@+id/ratingView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:visibility="visible">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3.5"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:theme="@style/orangeRatingBar"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    style="?attr/ratingBarStyleSmall"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.5"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_9ssp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

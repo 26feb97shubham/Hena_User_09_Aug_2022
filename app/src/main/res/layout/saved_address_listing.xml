@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/_10sdp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_address_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:fontFamily="@font/avenir_medium"
+        android:text="@string/saved_address"
+        android:textColor="@color/text_gold_color_dark"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:gravity="center_vertical|start"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_is_default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir_medium"
+        android:maxLines="1"
+        android:background="@drawable/curved_gold_filled_rect_box"
+        android:text="@string/default_address"
+        android:textAlignment="center"
+        android:textColor="@color/text_gold_color_dark"
+        android:textDirection="locale"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_address">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_address_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/edit"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="/"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_address_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_medium"
+            android:text="@string/delete"
+            android:textColor="@color/text_gold_color_dark"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/avenir_medium"
+        android:gravity="center_vertical|start"
+        android:text="@string/saved_address"
+        android:textAlignment="viewStart"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="@color/text_gold_color_dark"
+        android:textDirection="locale"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tv_address_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_address_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_title" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/text_gold_color"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        tools:layout_editor_absoluteX="19dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

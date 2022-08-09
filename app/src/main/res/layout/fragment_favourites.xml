@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/favoritesFragmentConstraintLayout"
+    tools:context=".fragments.FavouritesFragment">
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_naqashat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/little_gold_curved_01"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center"
+            android:text="@string/naqashat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_services"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/curved_white_filled_rect_box_01"
+            android:fontFamily="@font/avenir_medium"
+            android:gravity="center"
+            android:text="@string/services_1"
+            android:textColor="@color/gold"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tabs">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tabs_listing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/current_booking_recycler_items_listing" />
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_no_fav_found"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_medium_numbers"
+        android:gravity="center"
+        android:text="@string/no_fav_found"
+        android:textColor="@color/gold"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/fragment_fav_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

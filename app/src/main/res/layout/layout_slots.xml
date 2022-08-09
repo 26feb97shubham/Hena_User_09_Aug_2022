@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_20sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gray_solid_box"
+    android:id="@+id/slotCard"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/tvSlots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="09:00-10:00"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:fontFamily="@font/expressway_rg"/>
+
+</LinearLayout>

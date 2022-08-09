@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSlots"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:orientation="horizontal"
+    android:padding="@dimen/_4sdp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_your_slot_you_want_to_book"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/expressway_rg"
+        android:textStyle="normal"
+        android:id="@+id/tvSlotsText"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/personListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:itemCount="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSlotsText"
+        android:layout_marginTop="@dimen/_4sdp"
+        tools:listitem="@layout/layout_slots"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/personListRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/book_my_service"
+        android:padding="@dimen/_6sdp"
+        android:textSize="@dimen/_10ssp"
+        android:id="@+id/bookMyService"
+        android:layout_marginTop="@dimen/_4sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
