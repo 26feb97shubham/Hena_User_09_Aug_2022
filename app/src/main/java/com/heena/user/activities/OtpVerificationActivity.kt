@@ -274,7 +274,8 @@ class OtpVerificationActivity : AppCompatActivity() {
 
         val builder = createBuilder(arrayOf("email", "lang", "country_code", "phone"),
             arrayOf(sharedPreferenceInstance!![SharedPreferenceUtility.UserEmail, ""]
-                ,sharedPreferenceInstance!![SharedPreferenceUtility.SelectedLang, ""].toString(), "+971", sharedPreferenceInstance!![SharedPreferenceUtility.UserPhone, ""].toString()))
+                ,sharedPreferenceInstance!![SharedPreferenceUtility.SelectedLang, ""].toString(), "+971",
+                sharedPreferenceInstance!![SharedPreferenceUtility.UserPhone, ""].toString()))
 
 
         val call = apiInterface.otpresend(builder.build())

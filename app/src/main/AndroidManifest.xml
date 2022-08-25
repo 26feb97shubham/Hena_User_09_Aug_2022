@@ -37,11 +37,8 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".activities.PhotoEditorActivity"
-            android:exported="false" />
-
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/actions" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".activities.TapPaymentGateway"
@@ -145,9 +142,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service
-            android:name=".services.APIServices"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <receiver
             android:name=".broadcastreceiver.ConnectivityReceiver"

@@ -14,8 +14,8 @@ android {
         applicationId "com.heena.user"
         minSdkVersion 21
         targetSdkVersion 32
-        versionCode 5
-        versionName "1.4"
+        versionCode 6
+        versionName "1.5"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -81,15 +81,15 @@ dependencies {
     implementation 'io.nlopez.smartlocation:library:3.3.3'
     implementation 'com.github.chahine:pageindicator:0.2.8'
     implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.17.1'
-    implementation 'com.google.android.exoplayer:exoplayer-dash:2.17.1'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.17.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.1'
     implementation 'com.google.android.gms:play-services-location:20.0.0'
-    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
     implementation 'com.google.android.gms:play-services-location:20.0.0'
-    implementation 'com.google.firebase:firebase-analytics:21.0.0'
-    implementation 'com.google.firebase:firebase-core:21.0.0'
-    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+    implementation 'com.google.firebase:firebase-analytics:21.1.0'
+    implementation 'com.google.firebase:firebase-core:21.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.7'
     implementation 'com.stripe:stripe-android:19.1.0'
     implementation 'com.google.android.libraries.maps:maps:3.1.0-beta'
     implementation 'androidx.multidex:multidex:2.0.1'
@@ -98,7 +98,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.1'
 
     implementation platform('com.google.firebase:firebase-bom:28.4.1')
-    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+    implementation 'com.google.firebase:firebase-analytics:21.1.0'
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.applandeo:material-calendar-view:1.7.0'
 
@@ -109,12 +109,7 @@ dependencies {
     implementation 'pub.devrel:easypermissions:3.0.0'
     implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
 
-    //PayPal Integration
-    implementation('com.paypal.sdk:paypal-android-sdk:2.16.0') {
-        exclude group: 'io.card'
-    }
-
-    implementation 'javax.xml.bind:jaxb-api:2.0'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
     implementation 'com.github.smart-fun:XmlToJson:1.5.1'
 
     testImplementation 'junit:junit:'

@@ -4,21 +4,11 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioButton
-import androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior.getTag
 import androidx.recyclerview.widget.RecyclerView
 import com.heena.user.R
 import com.heena.user.`interface`.ClickInterface
 import com.heena.user.models.Cards
 import kotlinx.android.synthetic.main.item_cards_list.view.*
-import com.heena.user.*
-import com.heena.user.utils.Utility.mSelectedItem
-import com.heena.user.*
-import com.heena.user.*
-import kotlin.math.absoluteValue
-import com.paypal.android.sdk.cb
-
-import com.heena.user.*
 
 class PaymentCardsAdapter(private val context: Context, private val data:ArrayList<Cards>, private val clickInst: ClickInterface.ClickPosInterface)
     : RecyclerView.Adapter<PaymentCardsAdapter.MyViewHolder>(){

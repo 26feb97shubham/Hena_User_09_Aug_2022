@@ -341,4 +341,10 @@
     <string name="search_address">عنوان البحث</string>
     <string name="please_select_the_address_first">الرجاء تحديد العنوان أولا!</string>
     <string name="rejected_reason">سبب مرفوض</string>
+    <string name="booking_status">وضع الحجز</string>
+    <string name="service_booked_successfully">تم حجز الخدمة بنجاح</string>
+    <string name="cancellation_status">حالة الإلغاء</string>
+    <string name="payment_status">حالة السداد</string>
+    <string name="cancellation_message">رسالة الإلغاء</string>
+    <string name="payment_successful_message">تم الدفع بنجاح</string>
 </resources>

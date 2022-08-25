@@ -59,7 +59,6 @@ import com.heena.user.utils.Utility.apiManagerInterface
 import com.heena.user.utils.Utility.loginSignUpAccessAlertDialogBox
 import com.heena.user.utils.Utility.setSafeOnClickListener
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.default_listing_recycler_item.view.*
 import kotlinx.android.synthetic.main.fragment_book_service_bottom_sheet.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
@@ -76,14 +75,6 @@ import java.io.IOException
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
-import android.content.Context.JOB_SCHEDULER_SERVICE
-
-import androidx.test.core.app.ApplicationProvider.getApplicationContext
-import android.content.ComponentName
-import com.heena.user.services.APIServices
-import com.heena.user.tasks.HomeApiTasks.Companion.categoryListResponse
-import com.heena.user.tasks.HomeApiTasks.Companion.dashboardManagerListingResponse
-import com.heena.user.tasks.HomeApiTasks.Companion.userProfileResponse
 
 
 class HomeFragment : Fragment() {
@@ -282,15 +273,6 @@ class HomeFragment : Fragment() {
         isGuestLogin = instance!!.get(SharedPreferenceUtility.IsGuestUserLogin, false)
         Log.e("User Id", instance!!.get(SharedPreferenceUtility.UserId, 0).toString())
         Utility.setLanguage(requireContext(), lang)
-        jobScheduler = requireContext()
-            .getSystemService(JOB_SCHEDULER_SERVICE) as JobScheduler
-
-        val componentName = ComponentName(requireContext(), APIServices::class.java)
-        val jobInfo = JobInfo.Builder(1, componentName)
-            .setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY)
-            .setPersisted(true)
-            .build()
-        jobScheduler.schedule(jobInfo)
 
 
         if (isGuestLogin) {
@@ -496,77 +478,6 @@ class HomeFragment : Fragment() {
     private fun getHomes() {
         getCategories()
         getDashboardManagerList()
-    }
-
-    private fun setProfile() {
-        if (userProfileResponse.status == 1) {
-            profileUsername =
-                if (userProfileResponse.profile!!.name.toString().equals("")) {
-                    userProfileResponse.profile!!.username.toString()
-                } else {
-                    userProfileResponse.profile!!.name.toString()
-                }
-            Glide.with(requireContext()).load(profilePicture)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .listener(object : RequestListener<Drawable> {
-                    override fun onLoadFailed(
-                        p0: GlideException?,
-                        p1: Any?,
-                        p2: com.bumptech.glide.request.target.Target<Drawable>?,
-                        p3: Boolean
-                    ): Boolean {
-                        Log.e("err", p0?.message.toString())
-                        requireActivity().headerView.user_icon_progress_bar_side_top_view.visibility =
-                            View.GONE
-                        return false
-                    }
-
-                    override fun onResourceReady(
-                        p0: Drawable?,
-                        p1: Any?,
-                        target: com.bumptech.glide.request.target.Target<Drawable>?,
-                        dataSource: com.bumptech.glide.load.DataSource?,
-                        p4: Boolean
-                    ): Boolean {
-                        requireActivity().headerView.user_icon_progress_bar_side_top_view.visibility =
-                            View.GONE
-                        return false
-                    }
-                }).placeholder(R.drawable.user)
-                .apply(requestOption).into(requireActivity().headerView.userIcon)
-
-            Glide.with(requireContext()).load(profilePicture)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .listener(object : RequestListener<Drawable> {
-                    override fun onLoadFailed(
-                        p0: GlideException?,
-                        p1: Any?,
-                        p2: com.bumptech.glide.request.target.Target<Drawable>?,
-                        p3: Boolean
-                    ): Boolean {
-                        Log.e("err", p0?.message.toString())
-                        return false
-                    }
-
-                    override fun onResourceReady(
-                        p0: Drawable?,
-                        p1: Any?,
-                        target: com.bumptech.glide.request.target.Target<Drawable>?,
-                        dataSource: com.bumptech.glide.load.DataSource?,
-                        p4: Boolean
-                    ): Boolean {
-                        return false
-                    }
-                }).placeholder(R.drawable.user)
-                .apply(requestOption).into(requireActivity().img)
-            requireActivity().headerView.tv_name.text = profileUsername
-        } else {
-            Utility.showSnackBarOnResponseError(
-                mView!!.homeFragmentConstraintlayout,
-                userProfileResponse.message.toString(),
-                requireContext()
-            )
-        }
     }
 
     private fun getProfile() {
@@ -898,41 +809,6 @@ class HomeFragment : Fragment() {
         return null
     }
 
-    private fun setCategories(){
-        if (categoryListResponse.status == 1) {
-            categoryList.clear()
-            categoryList = categoryListResponse.category as ArrayList<CategoryItem>
-            for (i in 0 until categoryList.size) {
-                categoryNames.add(categoryList.get(i).name.toString())
-            }
-            mView!!.rv_services_list.layoutManager = LinearLayoutManager(
-                requireContext(),
-                LinearLayoutManager.VERTICAL,
-                false
-            )
-            serviceListingAdapter = ServiceListingAdapter(
-                requireContext(),
-                categoryNames,
-                object : ClickInterface.OnRecyclerItemClick {
-                    override fun OnClickAction(position: Int) {
-                        mView!!.tv_services_filter.text = categoryNames[position]
-                        selected_category =
-                            tv_services_filter.text.toString().trim()
-                        mView!!.cards_service_categories_listing.visibility =
-                            View.GONE
-                        service_id = returnServiceId(
-                            selected_category,
-                            categoryList
-                        ).toString()
-                        Log.e("service_id", service_id.toString())
-                    }
-                })
-            mView!!.rv_services_list.adapter = serviceListingAdapter
-        } else {
-            LogUtils.longToast(requireContext(), categoryListResponse.message)
-        }
-    }
-
     private fun getCategories() {
         val call =
             apiManagerInterface.categoryList(sharedPreferenceInstance!![SharedPreferenceUtility.SelectedLang, ""])
@@ -1150,21 +1026,6 @@ class HomeFragment : Fragment() {
             })
         mView!!.rv_default_listing.adapter = gridServiceListingAdapter
         gridServiceListingAdapter!!.notifyDataSetChanged()
-    }
-
-    private fun setDashboardManagerList(){
-        if (dashboardManagerListingResponse != null) {
-            if (dashboardManagerListingResponse.status == 1) {
-                managersList.clear()
-                managersList = dashboardManagerListingResponse.manager as ArrayList<ManagerItem>
-                mView!!.ll_no_manager_found_home.visibility = View.GONE
-                mView!!.rv_featured_naqashat.visibility = View.VISIBLE
-                setFeaturedNaqashatAdapter(managersList)
-            } else {
-                mView!!.ll_no_manager_found_home.visibility = View.VISIBLE
-                mView!!.rv_featured_naqashat.visibility = View.GONE
-            }
-        }
     }
 
     private fun getDashboardManagerList() {

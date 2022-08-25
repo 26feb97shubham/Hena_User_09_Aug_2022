@@ -2,6 +2,9 @@ package com.heena.user.application
 
 import android.app.Application
 import android.content.Context
+import android.os.Build
+import android.util.Base64.DEFAULT
+import android.util.Base64.encode
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.multidex.MultiDex
 import com.heena.user.R
@@ -12,6 +15,7 @@ import com.heena.user.utils.SharedPreferenceUtility
 import io.socket.client.IO
 import io.socket.client.Manager
 import io.socket.client.Socket
+import io.socket.utf8.UTF8.encode
 import okhttp3.OkHttpClient
 import java.util.*
 import javax.net.ssl.HostnameVerifier
@@ -44,7 +48,15 @@ class  MyApp : Application() {
         sharedPreferenceInstance = SharedPreferenceUtility.getInstance()
 
         if (!Places.isInitialized()) {
-            Places.initialize(this, getString(R.string.places_api_key), Locale.US)
+            val plainApiKey =getString(R.string.places_api_key)//
+
+            val encodedString: String = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                Base64.getEncoder().encodeToString(plainApiKey.toByteArray())
+            } else {
+                getString(R.string.places_api_key)
+            }
+
+            Places.initialize(this, encodedString, Locale.US)
         }
 
          AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)

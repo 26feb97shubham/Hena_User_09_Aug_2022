@@ -140,12 +140,8 @@ class HomeActivity : AppCompatActivity(), ConnectivityReceiver.ConnectivityRecei
                         }
                     })
 
-                    cancelPaymentDialog.setNegativeButton(R.string.no, object : DialogInterface.OnClickListener{
-                        override fun onClick(p0: DialogInterface?, p1: Int) {
-                            p0!!.cancel()
-                        }
-                    })
-
+                    cancelPaymentDialog.setNegativeButton(R.string.no
+                    ) { p0, _ -> p0!!.cancel() }
 
 
                     val cancelAlert = cancelPaymentDialog.create()
@@ -172,7 +168,7 @@ class HomeActivity : AppCompatActivity(), ConnectivityReceiver.ConnectivityRecei
             }
         }
     }
-    var isInBackgroundandNwavailable=false
+    private var isInBackgroundandNwavailable=false
     override fun onNetworkConnectionChanged(isConnected: Boolean) {
         if(!isConnected){
             isInBackgroundandNwavailable=false
@@ -208,41 +204,6 @@ class HomeActivity : AppCompatActivity(), ConnectivityReceiver.ConnectivityRecei
         if (networkChangeReceiver!=null) {
             unregisterReceiver(networkChangeReceiver)
         }
-    }
-
-    private fun Intent.handleIntent(){
-        when(action){
-            Intent.ACTION_VIEW -> handleDeepLink(data)
-            else -> goToDefaultView()
-        }
-    }
-
-    private fun handleDeepLink(data: Uri?) {
-        when(data?.path){
-            "/open" -> {
-                val featureType = data.getQueryParameter("featureName").orEmpty()
-                navigateToScreens(featureType)
-            }
-        }
-    }
-
-    private fun navigateToScreens(featureType: String) {
-        val navHostFragment=supportFragmentManager.findFragmentById(R.id.nav_home_host_fragment) as NavHostFragment
-        navController=navHostFragment.navController
-        when(featureType){
-            "profile" -> {
-                navController.navigate(R.id.myProfileFragment)
-            }
-            "settings" -> {
-                navController.navigate(R.id.settingsFragment)
-            }
-            "notifications" -> {
-                navController.navigate(R.id.notificationsFragment)
-            }
-        }
-    }
-
-    private fun goToDefaultView() {
     }
 
     private fun showBookingConfirmDialog(message: String, status : Int) {

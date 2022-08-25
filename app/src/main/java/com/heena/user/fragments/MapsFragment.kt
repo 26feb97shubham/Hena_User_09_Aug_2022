@@ -134,7 +134,7 @@ class MapsFragment : Fragment(),
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker!!.remove()
         }
-        val latLng = LatLng(location.getLatitude(), location.getLongitude())
+        val latLng = LatLng(location.latitude, location.longitude)
         val markerOptions = MarkerOptions()
         markerOptions.position(latLng)
         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
